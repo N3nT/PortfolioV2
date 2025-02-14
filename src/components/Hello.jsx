@@ -1,4 +1,4 @@
-import { MapPin, User } from 'lucide-react';
+import { MapPin, User, CircleArrowDown } from 'lucide-react';
 import face from '../assets/face.jpg';
 const Hello = () => {
 
@@ -23,6 +23,7 @@ const Hello = () => {
                     </div>
                     </p></div>
             </div>
+            <CircleArrowDown className='opacity-80 mt-5 animate-pulse cursor-pointer'/>
         </section>
     )
 }

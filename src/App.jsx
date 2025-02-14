@@ -4,7 +4,7 @@ import Projects from './components/Projects';
 
 function App() {  
   return (
-    <div className="bg-radial-[at_40%_40%] from-stone-900 to-stone-950 to-70% h-screen overflow-auto relative z-20 font-[Red_Hat_Display]">
+    <div className="cursor-crosshair bg-radial-[at_40%_40%] from-stone-900 to-stone-950 to-70% h-screen overflow-auto relative z-20 font-[Red_Hat_Display]">
       <Nav/>
       <Hello/>
       <Projects/>
