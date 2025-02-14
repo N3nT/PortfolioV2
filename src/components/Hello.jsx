@@ -4,7 +4,7 @@ const Hello = () => {
 
     return(
         <section className="text-white flex flex-col items-center">
-            <div className='w-[238px] h-[238px] overflow-hidden rounded-full bg-white border-5 border-green-400 opacity-90 animate-bounce mt-10 flex items-center justify-center'>
+            <div className='w-[238px] h-[238px] overflow-hidden rounded-full bg-white border-5 border-green-400 animate-bounce mt-10 flex items-center justify-center'>
                 <div className='border-5 border-stone-700 rounded-full w-[230px] h-[230px] overflow-hidden'>
                     <img className='scale-80' src={face} alt="Zdjęcie mojej osoby" />
                 </div>
