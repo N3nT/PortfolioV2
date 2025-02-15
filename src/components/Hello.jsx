@@ -15,7 +15,7 @@ const Hello = () => {
                 <p className='uppercase opacity-80 animate-typewriter text-center overflow-hidden whitespace-nowrap font-[Anonymous_Pro]'>front-end developer</p>
                 <div className='w-[1px] h-[20px] bg-green-400 animate-blinkTextCursor'></div>
             </div>
-            <div className='mt-2 flex flex-col items-center'>
+            <div className='mt-10 flex flex-col items-center'>
                 <div className='flex opacity-80'><MapPin className='mr-2'/><p>Brzesko | Kraków, Polska</p></div>
                 <div className='flex opacity-80'><User className='mr-2'/><p>Dostępny 
                     <div className='inline-flex relative ml-2'>
@@ -23,7 +23,7 @@ const Hello = () => {
                     </div>
                     </p></div>
             </div>
-            <CircleArrowDown className='opacity-80 mt-5 animate-pulse cursor-pointer'/>
+            <CircleArrowDown className='opacity-80 my-10 animate-pulse cursor-pointer' size={32}/>
         </section>
     )
 }

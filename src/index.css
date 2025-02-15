@@ -36,4 +36,28 @@
       from{opacity: 1;}
       to{opacity: 0;}
     }
+
+    --animate-comeFromLeft: comeFromLeft 1s normal;
+    @keyframes comeFromLeft {
+      from{
+        transform: translate(-100%);
+        opacity: 0;
+      }
+      to{
+        transform: translate(0);
+        opacity: 100;
+      }
+    }
+    
+    --animate-comeFromRight: comeFromRight 1s normal;
+    @keyframes comeFromRight {
+      from{
+        transform: translate(100%);
+        opacity: 0;
+      }
+      to{
+        transform: translate(0);
+        opacity: 100;
+      }
+    }
   }
