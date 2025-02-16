@@ -1,6 +1,7 @@
 import Nav from './components/Nav';
 import Hello from './components/Hello';
 import Projects from './components/Projects';
+import Footer from './components/Footer';
 
 function App() {  
   return (
@@ -11,6 +12,7 @@ function App() {
       {/* <div className='h-[1000px]'>
         <p className='text-white'>dupa</p>
       </div> */}
+      <Footer/>
     </div>
   )
 }

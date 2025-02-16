@@ -7,7 +7,7 @@ const Projects = () => {
         <section className="flex flex-col items-center">
             <h2 className="text-white text-center text-3xl">Projekty</h2>
             {/* data */}
-            <div className='flex flex-col md:flex-row items-center'>
+            <div className='flex flex-col md:flex-row items-center *:md:mx-5'>
                 <div className="w-[300px] h-[400px] border-2 border-stone-700 rounded-2xl overflow-hidden relative animate-comeFromLeft mt-10">
                     <img src={post} alt="" className=''/>
                     <div className='absolute top-0 w-full h-full bg-black opacity-0 hover:opacity-100 transition-opacity transition-discrete ease-in-out duration-300 delay-50 flex flex-col items-center justify-center'>
