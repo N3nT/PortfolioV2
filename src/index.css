@@ -1,73 +1,129 @@
 @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @theme {
-    --animate-underline: underline 0.3s cubic-bezier(.4,0,.2,1);
-    @keyframes underline {
-      0% {
-        width: 0%;
-      }
-      100% {
-        width: 100%;
-      }
-    }
+	--animate-underline: underline 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+	@keyframes underline {
+		0% {
+			width: 0%;
+		}
+		100% {
+			width: 100%;
+		}
+	}
 
-    --animate-bounce: bounce 1.5s infinite;
-    @keyframes bounce {
-      0%, 100% {
-        transform: translateY(-2%);
-        animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
-      }
-      50% {
-        transform: none;
-        animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
-      }
-    }
- 
-    
-    --animate-typewriter: typewriter 2s steps(19) 0.5s 1 normal both;
-    @keyframes typewriter {
-      from{width: 0;}
-      to{width: 169px;}
-    }
+	--animate-bounce: bounce 1.5s infinite;
+	@keyframes bounce {
+		0%,
+		100% {
+			transform: translateY(-2%);
+			animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+		}
+		50% {
+			transform: none;
+			animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+		}
+	}
 
-    --animate-blinkTextCursor: blinkTextCursor 1s 2.5s infinite;
-    @keyframes blinkTextCursor{
-      from{opacity: 1;}
-      to{opacity: 0;}
-    }
+	--animate-typewriter: typewriter 2s steps(19) 0.5s 1 normal both;
+	@keyframes typewriter {
+		from {
+			width: 0;
+		}
+		to {
+			width: 169px;
+		}
+	}
 
-    --animate-comeFromLeft: comeFromLeft 1s normal;
-    @keyframes comeFromLeft {
-      from{
-        transform: translate(-100%);
-        opacity: 0;
-      }
-      to{
-        transform: translate(0);
-        opacity: 100;
-      }
-    }
-    
-    --animate-comeFromRight: comeFromRight 5s infinite;
-    @keyframes comeFromRight {
-      from{
-        transform: translate(100%);
-        opacity: 0;
-      }
-      to{
-        transform: translate(0);
-        opacity: 100;
-      }
-    }
+	--animate-blinkTextCursor: blinkTextCursor 1s 2.5s infinite;
+	@keyframes blinkTextCursor {
+		from {
+			opacity: 1;
+		}
+		to {
+			opacity: 0;
+		}
+	}
 
-    --animate-rightSlide: rightSlide 30s linear infinite;
-    @keyframes rightSlide {
-      from{
-        transform: translate();
-      }
-      to{
-        transform: translate(-140%);
-      }
+	--animate-comeFromLeft: comeFromLeft 1s normal;
+	@keyframes comeFromLeft {
+		from {
+			transform: translate(-100%);
+			opacity: 0;
+		}
+		to {
+			transform: translate(0);
+			opacity: 100;
+		}
+	}
+
+	--animate-comeFromRight: comeFromRight 5s infinite;
+	@keyframes comeFromRight {
+		from {
+			transform: translate(100%);
+			opacity: 0;
+		}
+		to {
+			transform: translate(0);
+			opacity: 100;
+		}
+	}
+
+	--animate-rightSlide: rightSlide 22s linear infinite;
+	@keyframes rightSlide {
+    from{
+      opacity: 0;
     }
-  }
+    10%{
+      opacity: 0;
+    }
+    25%{
+      opacity: 1;
+    }
+    50%{
+      opacity: 1;
+    }
+    75%{
+      opacity: 1;
+    }
+    90%{
+      opacity: 0;
+    }
+		to {
+			transform: translateX(-1100px);
+      opacity: 0;
+		}
+	}
+}
+
+.marquee {
+	max-width: 1000px;
+	overflow: hidden;
+	--speed: 30s;
+	--item-width: 60px;
+	--item-gap: 10px;
+
+	--single-slide-speed: calc(var(--speed) / var(--num-items));
+	--item-width-plus-gap: calc(var(--item-width) + var(--item-gap));
+	--track-width: calc(var(--item-width-plus-gap) * calc(var(--num-items) - 1));
+}
+
+.marquee-track {
+	container-type: inline-size;
+	display: grid;
+	grid-template-columns: var(--track-width) [track] 0px [resting];
+	width: max-content;
+}
+
+.marquee-item {
+	width: var(--item-width);
+	grid-area: resting;
+	animation: marquee-move var(--speed) linear infinite var(--direction, forwards);
+	animation-delay: calc(var(--single-slide-speed) * var(--item-position) * -1);
+}
+
+@keyframes marquee-move {
+	to {
+		transform: translateX(calc(-100cqw - 100%));
+	}
+}

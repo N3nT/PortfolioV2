@@ -49,18 +49,22 @@ const Hello = () => {
                 </div>
                 
             </div>
-            <div className='flex w-max justify-around animate-rightSlide space-x-15 my-10 *:w-[60px] translate-x-[70%] sm:translate-x-[90%] lg:translate-x-[110%] 2xl:translate-x-[130%]'>
-                <img src={React} alt=""/>
-                <img src={TailwindCSS} alt=""/>
-                <img src={Python} alt=""/>
-                <img src={PHP} alt=""/>
-                <img src={Vite} alt=""/>
-                <img src={MySql} alt=""/>
-                <img src={Sass} alt=""/>
-                <img src={cLanguage} alt=""/>
-                <img src={Git} alt=""/>
-                <img src={HTML5} alt=""/>
-                <img src={CSS} alt=""/>
+            {/* gradient z przezroczystoscia jako maska i max width wtedy */}
+            {/* 70px dlugosc elementu 20s animacja  */}
+            <div className='flex w-full max-w-[1000px] overflow-hidden my-10 z-10 relative'>
+                <div className='flex w-full max-w-[1000px] my-10 *:w-[60px] *:mx-6 relative items-center'>
+                    <img src={React} alt="React logo" className='absolute -right-[125px] animate-rightSlide'/>
+                    <img src={TailwindCSS} alt="TailwindCSS logo" className='absolute -right-[125px] animate-rightSlide' style={{animationDelay: '-2s'}}/>
+                    <img src={Python} alt="Python logo" className='absolute -right-[125px] animate-rightSlide' style={{animationDelay: '-4s'}}/>
+                    <img src={PHP} alt="PHP logo" className='absolute -right-[125px] animate-rightSlide' style={{animationDelay: '-6s'}}/>
+                    <img src={Vite} alt="Vite logo" className='absolute -right-[125px] animate-rightSlide' style={{animationDelay: '-8s'}}/>
+                    <img src={MySql} alt="MySQL logo" className='absolute -right-[125px] animate-rightSlide' style={{animationDelay: '-10s'}}/>
+                    <img src={Sass} alt="Sass logo" className='absolute -right-[125px] animate-rightSlide' style={{animationDelay: '-12s'}}/>
+                    <img src={cLanguage} alt="C logo" className='absolute -right-[125px] animate-rightSlide' style={{animationDelay: '-14s'}}/>
+                    <img src={Git} alt="Git logo" className='absolute -right-[125px] animate-rightSlide' style={{animationDelay: '-16s'}}/>
+                    <img src={HTML5} alt="HTML5 logo" className='absolute -right-[125px] animate-rightSlide' style={{animationDelay: '-18s'}}/>
+                    <img src={CSS} alt="CSS logo" className='absolute -right-[125px] animate-rightSlide' style={{animationDelay: '-20s'}}/>
+                </div>
             </div>
         </section>
     )
