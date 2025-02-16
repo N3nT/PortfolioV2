@@ -49,7 +49,7 @@
       }
     }
     
-    --animate-comeFromRight: comeFromRight 1s normal;
+    --animate-comeFromRight: comeFromRight 5s infinite;
     @keyframes comeFromRight {
       from{
         transform: translate(100%);
@@ -58,6 +58,16 @@
       to{
         transform: translate(0);
         opacity: 100;
+      }
+    }
+
+    --animate-rightSlide: rightSlide 50s linear infinite;
+    @keyframes rightSlide {
+      from{
+        transform: translate(100%);
+      }
+      to{
+        transform: translate(-100%);
       }
     }
   }

@@ -8,9 +8,9 @@ function App() {
       <Nav/>
       <Hello/>
       <Projects/>
-      <div className='h-[1000px]'>
+      {/* <div className='h-[1000px]'>
         <p className='text-white'>dupa</p>
-      </div>
+      </div> */}
     </div>
   )
 }
