@@ -49,19 +49,18 @@ const Hello = () => {
                 </div>
                 
             </div>
-            <div className='flex w-max justify-around animate-rightSlide space-x-10 my-10'>
-                <img src={React} alt="" className='w-[50px]'/>
-                <img src={TailwindCSS} alt="" className='w-[50px]'/>
-                <img src={Python} alt="" className='w-[50px]'/>
-                <img src={PHP} alt="" className='w-[50px]'/>
-                <img src={JS} alt="" className='w-[50px]'/>
-                <img src={Vite} alt="" className='w-[50px]'/>
-                <img src={MySql} alt="" className='w-[50px]'/>
-                <img src={Sass} alt="" className='w-[50px]'/>
-                <img src={cLanguage} alt="" className='w-[50px]'/>
-                <img src={Git} alt="" className='w-[50px]'/>
-                <img src={HTML5} alt="" className='w-[50px]'/>
-                <img src={CSS} alt="" className='w-[50px]'/>
+            <div className='flex w-max justify-around animate-rightSlide space-x-15 my-10 *:w-[60px] translate-x-[70%] sm:translate-x-[90%] lg:translate-x-[110%] 2xl:translate-x-[130%]'>
+                <img src={React} alt=""/>
+                <img src={TailwindCSS} alt=""/>
+                <img src={Python} alt=""/>
+                <img src={PHP} alt=""/>
+                <img src={Vite} alt=""/>
+                <img src={MySql} alt=""/>
+                <img src={Sass} alt=""/>
+                <img src={cLanguage} alt=""/>
+                <img src={Git} alt=""/>
+                <img src={HTML5} alt=""/>
+                <img src={CSS} alt=""/>
             </div>
         </section>
     )
