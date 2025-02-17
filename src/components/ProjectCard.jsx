@@ -8,7 +8,7 @@ const ProjectCard = ({ projectImg, techStack, liveLink, repoLink, projectTitle }
 				</p>
 				<div className='flex mt-10 space-x-5 flex-wrap justify-center'>
 					{techStack ? 
-                        (techStack.map((tech, index) => { return (<img key={index} src={tech} alt={`${tech} logo`} />)})) : null}
+                        (techStack.map((tech, index) => { return (<img key={index} src={tech} alt={`${tech} logo`} className="w-[50px]"/>)})) : null}
 				</div>
 				<div className="mt-10 *:py-5 *:px-8 *:mt-10">
                     {liveLink ? 
