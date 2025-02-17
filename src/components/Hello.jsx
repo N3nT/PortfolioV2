@@ -51,7 +51,7 @@ const Hello = () => {
                 </div>
             </div>
 
-            <div className='flex w-full max-w-[1000px] overflow-hidden my-10 z-10 relative'>
+            <div className='flex w-full max-w-[1000px] overflow-hidden my-10 relative'>
                 <div className='flex w-full max-w-[1000px] my-10 *:w-[60px] *:mx-6 relative items-center *:absolute *:-right-[125px] *:animate-rightSlide *:lg:animate-rightSlideWithOpacity'>
                     <img src={React} alt="React logo"/>
                     <img src={TailwindCSS} alt="TailwindCSS logo" style={{animationDelay: '-2s'}}/>

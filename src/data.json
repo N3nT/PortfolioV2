@@ -1,0 +1,31 @@
+{
+    "projects":[
+        {
+            "name": "Portfolio",
+            "imageMobile": "./src/assets/portfolio.png",
+            "imageDesktop": "portfolio.png",
+            "comercial": false,
+            "repoLink": "https://github.com/N3nT/PortfolioV2",
+            "liveLink": null,
+            "techstack": ["./src/assets/react.svg", "./src/assets/vite.svg"]
+        },
+        {
+            "name": "museumShowcase",
+            "imageMobile": "museum.png",
+            "imageDesktop": "museum.png",
+            "comercial": false,
+            "repoLink": "https://github.com/N3nT/museumShowcase",
+            "liveLink": "https://museum-showcase-chi.vercel.app/",
+            "techstack": ["./src/assets/react.svg", "./src/assets/vite.svg"]
+        },
+        {
+            "name": "Portfolio",
+            "imageMobile": "./src/assets/portfolio.png",
+            "imageDesktop": "portfolio.png",
+            "comercial": false,
+            "repoLink": null,
+            "liveLink": null,
+            "techstack": ["./src/assets/react.svg", "./src/assets/vite.svg"]
+        }
+    ]
+}
