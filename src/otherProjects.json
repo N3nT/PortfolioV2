@@ -1,0 +1,24 @@
+{
+    "projects":[
+        {
+            "name": "Contact Manager",
+            "repoLink": "https://github.com/N3nT/PortfolioV2",
+            "techstack": ["./src/assets/c.svg"]
+        },
+        {
+            "name": "Piggybank",
+            "repoLink": "https://github.com/N3nT/PortfolioV2",
+            "techstack": ["./src/assets/python.svg"]
+        },
+        {
+            "name": "Windows Widget",
+            "repoLink": "https://github.com/N3nT/PortfolioV2",
+            "techstack": ["./src/assets/c.svg"]
+        },
+        {
+            "name": "DiscordBot",
+            "repoLink": "https://github.com/N3nT/PortfolioV2",
+            "techstack": ["./src/assets/c.svg", "./src/assets/c.svg"]
+        }
+    ]
+}

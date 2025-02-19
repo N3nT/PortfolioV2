@@ -2,7 +2,7 @@
     "projects":[
         {
             "name": "Portfolio",
-            "image": "./src/assets/portfolio.png",
+            "image": "./src/assets/Portfolio.png",
             "repoLink": "https://github.com/N3nT/PortfolioV2",
             "liveLink": null,
             "techstack": ["./src/assets/react.svg", "./src/assets/vite.svg"]
