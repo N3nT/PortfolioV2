@@ -98,4 +98,11 @@
 			transform: translateX(-1100px);
 		}
 	}
+
+	--animate-hiddeModal: hiddeModal 3s normal;
+	@keyframes hiddeModal {
+		to {
+			opacity: 0;
+		}
+	}
 }

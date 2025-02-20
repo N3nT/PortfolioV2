@@ -69,23 +69,6 @@ const Hello = () => {
                     <img src={JS} alt="JS logo" style={{animationDelay: '-22s'}}/>
                 </div>
             </div>
-            {/* reverse */}
-            {/* <div className='flex w-full max-w-[1000px] overflow-hidden my-10 z-10 relative'>
-                <div className='flex w-full max-w-[1000px] my-10 *:w-[60px] *:mx-6 relative items-center *:absolute *:-right-[125px] *:animate-rightSlide *:lg:animate-rightSlideWithOpacity'>
-                    <img src={React} alt="React logo" style={{animationDirection: 'reverse'}}/>
-                    <img src={TailwindCSS} alt="TailwindCSS logo" style={{animationDelay: '-2s', animationDirection: 'reverse'}}/>
-                    <img src={Python} alt="Python logo" style={{animationDelay: '-4s', animationDirection: 'reverse'}}/>
-                    <img src={PHP} alt="PHP logo" style={{animationDelay: '-6s', animationDirection: 'reverse'}}/>
-                    <img src={Vite} alt="Vite logo" style={{animationDelay: '-8s', animationDirection: 'reverse'}}/>
-                    <img src={MySql} alt="MySQL logo" style={{animationDelay: '-10s', animationDirection: 'reverse'}}/>
-                    <img src={Sass} alt="Sass logo" style={{animationDelay: '-12s', animationDirection: 'reverse'}}/>
-                    <img src={cLanguage} alt="C logo" style={{animationDelay: '-14s', animationDirection: 'reverse'}}/>
-                    <img src={Git} alt="Git logo" style={{animationDelay: '-16s', animationDirection: 'reverse'}}/>
-                    <img src={HTML5} alt="HTML5 logo" style={{animationDelay: '-18s', animationDirection: 'reverse'}}/>
-                    <img src={CSS} alt="CSS logo" style={{animationDelay: '-20s', animationDirection: 'reverse'}}/>
-                    <img src={JS} alt="JS logo" style={{animationDelay: '-22s', animationDirection: 'reverse'}}/>
-                </div>
-            </div> */}
         </section>
     )
 }
