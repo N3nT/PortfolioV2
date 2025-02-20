@@ -16,7 +16,6 @@ import linedIn from '../assets/linkedin-app-white-icon.svg';
 import github from '../assets/github-white-icon1.svg';
 import mail from '../assets/mail.svg';
 import discord from '../assets/discord.svg';
-import discord2 from '../assets/discord2.svg';
 
 const Hello = () => {
 

@@ -14,7 +14,7 @@ const Projects = () => {
                 }) : null}
             </div>
             <h3 className='text-white/70 text-xl my-10'>Other</h3>
-            <div className='flex flex-wrap justify-center items-center max-w-[1000px]'>
+            <div className='flex flex-wrap justify-center items-center max-w-[1000px] animate-comeFromRight'>
                {otherProjectsData ? (otherProjectsData.projects.map((project, index) => {
                     console.log(project);
                     return (<OtherProjectCard key={index} techStack={project.techstack} title={project.name} link={project.repoLink}/>)
@@ -22,7 +22,7 @@ const Projects = () => {
                : 
                (null)}
             </div>
-            <a href="https://github.com/N3nT?tab=repositories" className='bg-green-400 text-white p-5 font-bold text-lg rounded-2xl mt-10 hover:bg-green-700'>Check all projects</a>
+            <a href="https://github.com/N3nT?tab=repositories" className='bg-green-400 text-white p-5 text-lg rounded-lg mt-10 hover:bg-green-700'>Check all projects</a>
         </section>
     )
 }

@@ -3,22 +3,22 @@
         {
             "name": "Contact Manager",
             "repoLink": "https://github.com/N3nT/PortfolioV2",
-            "techstack": ["./src/assets/c.svg"]
+            "techstack": ["./src/assets/C.svg"]
         },
         {
             "name": "Piggybank",
             "repoLink": "https://github.com/N3nT/PortfolioV2",
-            "techstack": ["./src/assets/python.svg"]
+            "techstack": ["./src/assets/Python.svg"]
         },
         {
             "name": "Windows Widget",
             "repoLink": "https://github.com/N3nT/PortfolioV2",
-            "techstack": ["./src/assets/c.svg"]
+            "techstack": ["./src/assets/C.svg"]
         },
         {
             "name": "DiscordBot",
             "repoLink": "https://github.com/N3nT/PortfolioV2",
-            "techstack": ["./src/assets/c.svg", "./src/assets/c.svg"]
+            "techstack": ["./src/assets/C.svg", "./src/assets/C.svg"]
         }
     ]
 }
