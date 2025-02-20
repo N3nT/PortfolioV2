@@ -99,10 +99,10 @@
 		}
 	}
 
-	--animate-hiddeModal: hiddeModal 3s normal;
-	@keyframes hiddeModal {
-		to {
-			opacity: 0;
+	--animate-timeRun: timeRun 5s linear;
+	@keyframes timeRun {
+		to{
+			transform: translateX(-105%);
 		}
 	}
 }
