@@ -12,7 +12,7 @@ const Contact = ({setContactActive}) => {
 
     return(
         <section className='flex flex-col items-center text-white' ref={ref}>
-            <h2 className="text-white text-3xl text-center my-15">Kontakt</h2>
+            <h2 className="text-white text-3xl sm:text-4xl text-center my-15">Kontakt</h2>
             <Form/>
         </section>
     )
