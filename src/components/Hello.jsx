@@ -1,12 +1,11 @@
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
+import { motion } from "motion/react"
 
 import { MapPin, User, GraduationCap } from 'lucide-react';
 import face from '../assets/face.jpg';
 import cLanguage from '../assets/C.svg';
-import CSS from '../assets/CSS3.svg';
 import Git from '../assets/Git.svg';
-import HTML5 from '../assets/HTML5.svg';
 import JS from '../assets/JavaScript.svg';
 import MySql from '../assets/MySQL.svg';
 import PHP from '../assets/PHP.svg';
@@ -29,12 +28,18 @@ const Hello = ({setHomeActive}) => {
     }, [inView]);
    
     return(
-        <section className="text-white flex flex-col items-center overflow-hidden" ref={ref}>
-            <div className='w-[238px] h-[238px] overflow-hidden rounded-full bg-white border-5 border-green-400 animate-bounce mt-10 flex items-center justify-center'>
-                <div className='border-5 border-stone-700 rounded-full w-[230px] h-[230px] overflow-hidden'>
-                    <img className='scale-80' src={face} alt="Zdjęcie mojej osoby" />
+        <section className="text-white flex flex-col items-center overflow-hidden mb-15" ref={ref}>
+            <motion.div
+                initial={{ opacity: 0, y: -200}}
+                animate={{ opacity: 1, y: 0,
+                    transition: { duration: 1 }
+                }}>
+                <div className='w-[238px] h-[238px] overflow-hidden rounded-full bg-white border-5 border-green-400 animate-bounce mt-15 flex items-center justify-center'>
+                    <div className='border-5 border-stone-700 rounded-full w-[230px] h-[230px] overflow-hidden'>
+                        <img className='scale-80' src={face} alt="Zdjęcie mojej osoby" />
+                    </div>
                 </div>
-            </div>
+            </motion.div>
             <h1 className='mt-5 font-bold text-4xl text-center'>Bartosz Widlak</h1>
             <div className='flex items-center'>
                 <p className='uppercase opacity-80 animate-typewriter text-center overflow-hidden whitespace-nowrap font-[Anonymous_Pro]'>front-end developer</p>
@@ -62,7 +67,7 @@ const Hello = ({setHomeActive}) => {
                 </div>
             </div>
 
-            <div className='flex w-full max-w-[1000px] overflow-hidden my-10 relative'>
+            <div className='flex w-full max-w-[1000px] overflow-hidden mt-10 relative'>
                 <div className='flex w-full max-w-[1000px] my-10 *:w-[60px] *:md:w-[65px] *:mx-6 relative items-center *:absolute *:-right-[125px] *:animate-rightSlide *:lg:animate-rightSlideWithOpacity'>
                     <img src={React} alt="React logo"/>
                     <img src={TailwindCSS} alt="TailwindCSS logo" style={{animationDelay: '-2s'}}/>
@@ -73,9 +78,7 @@ const Hello = ({setHomeActive}) => {
                     <img src={Sass} alt="Sass logo" style={{animationDelay: '-12s'}}/>
                     <img src={cLanguage} alt="C logo" style={{animationDelay: '-14s'}}/>
                     <img src={Git} alt="Git logo" style={{animationDelay: '-16s'}}/>
-                    <img src={HTML5} alt="HTML5 logo" style={{animationDelay: '-18s'}}/>
-                    <img src={CSS} alt="CSS logo" style={{animationDelay: '-20s'}}/>
-                    <img src={JS} alt="JS logo" style={{animationDelay: '-22s'}}/>
+                    <img src={JS} alt="JS logo" style={{animationDelay: '-18s'}}/>
                 </div>
             </div>
         </section>

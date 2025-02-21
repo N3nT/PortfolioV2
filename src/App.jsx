@@ -5,7 +5,6 @@ import Hello from './components/Hello';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import MyComponent from './components/MyComponent';
 
 function App() {  
   const [homeActive, setHomeActive] = useState(false);

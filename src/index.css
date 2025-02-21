@@ -45,31 +45,7 @@
 		}
 	}
 
-	--animate-comeFromLeft: comeFromLeft 1s normal;
-	@keyframes comeFromLeft {
-		from {
-			transform: translate(-100%);
-			opacity: 0;
-		}
-		to {
-			transform: translate(0);
-			opacity: 100;
-		}
-	}
-
-	--animate-comeFromRight: comeFromRight 1s normal;
-	@keyframes comeFromRight {
-		from {
-			transform: translate(100%);
-			opacity: 0;
-		}
-		to {
-			transform: translate(0);
-			opacity: 100;
-		}
-	}
-
-	--animate-rightSlideWithOpacity: rightSlideWithOpacity 24s linear infinite;
+	--animate-rightSlideWithOpacity: rightSlideWithOpacity 20s linear infinite;
 	@keyframes rightSlideWithOpacity {
     from{
       opacity: 0;
@@ -92,7 +68,7 @@
 		}
 	}
 
-  --animate-rightSlide: rightSlide 24s linear infinite;
+  --animate-rightSlide: rightSlide 20s linear infinite;
 	@keyframes rightSlide {
 		to {
 			transform: translateX(-1100px);

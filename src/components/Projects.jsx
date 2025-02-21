@@ -16,7 +16,7 @@ const Projects = ({setProjectsActive}) => {
     
 
     return(
-        <section className="flex flex-col items-center" ref={ref}>
+        <section className="flex flex-col items-center mb-15" ref={ref}>
             <h2 className="text-white text-center text-3xl sm:text-4xl">Projekty</h2>
             <h3 className='text-white/70 text-xl mt-10 sm:text-2xl'>WebDevelopment</h3>
             <div className='flex flex-col md:flex-row items-center *:md:mx-5 max-w-[1100px] flex-wrap justify-center'>
@@ -25,7 +25,7 @@ const Projects = ({setProjectsActive}) => {
                 }) : null}
             </div>
             <h3 className='text-white/70 text-xl my-10 sm:text-2xl'>Other</h3>
-            <div className='flex flex-wrap justify-center items-center max-w-[1000px] animate-comeFromRight'>
+            <div className='flex flex-wrap justify-center items-center max-w-[1000px]'>
                {otherProjectsData ? (otherProjectsData.projects.map((project, index) => {
                     return (<OtherProjectCard key={index} techStack={project.techstack} title={project.name} link={project.repoLink}/>)
                })) 
