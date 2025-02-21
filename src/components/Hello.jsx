@@ -1,4 +1,6 @@
 import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
+
 import { MapPin, User, GraduationCap } from 'lucide-react';
 import face from '../assets/face.jpg';
 import cLanguage from '../assets/C.svg';
@@ -17,7 +19,7 @@ import linedIn from '../assets/linkedin-app-white-icon.svg';
 import github from '../assets/github-white-icon1.svg';
 import mail from '../assets/mail.svg';
 import discord from '../assets/discord.svg';
-import { useEffect } from "react";
+
 
 const Hello = ({setHomeActive}) => {
     const { ref, inView } = useInView({threshold: [0.5]});
@@ -44,24 +46,24 @@ const Hello = ({setHomeActive}) => {
             
             <div className='mt-5 flex flex-col items-center'>
                 <div className='flex opacity-80 mb-5 items-center *:p-2 *:hover:opacity-70 *:transition-opacity'>
-                    <a href="https://www.linkedin.com/in/bartosz-widlak-06a316313/" target='_blank'><img src={linedIn} alt="linkedin link" className='w-[35px] h-[35px]'/></a>
-                    <a href="https://github.com/N3nT" target='_blank'><img src={github} alt="github link" className='w-[40px] h-[40px]'/></a>
-                    <a href="https://github.com/N3nT" target='_blank'><img src={discord} alt="github link"/></a>
-                    <a href="mailto:bartosz.widlak@op.pl" target='_blank'><img src={mail} alt="mail link" className='w-[45px] h-[45px]'/></a>
+                    <a href="https://www.linkedin.com/in/bartosz-widlak-06a316313/" target='_blank'><img src={linedIn} alt="linkedin link" className='w-[35px] h-[35px] md:w-[45px] md:h-[45px]'/></a>
+                    <a href="https://github.com/N3nT" target='_blank'><img src={github} alt="github link" className='w-[40px] h-[40px] md:w-[50px] md:h-[50px]'/></a>
+                    <a href="https://github.com/N3nT" target='_blank'><img src={discord} alt="github link" className='md:w-[60px] md:h-[60px]'/></a>
+                    <a href="mailto:bartosz.widlak@op.pl" target='_blank'><img src={mail} alt="mail link" className='w-[45px] h-[45px] md:w-[55px] md:h-[55px]'/></a>
                 </div>
-                <div className='flex opacity-80'><GraduationCap className='mr-2'/> Student - UKEN Kraków | Informatyka</div>
-                <div className='flex opacity-80'><MapPin className='mr-2'/><p>Brzesko | Kraków, Polska</p></div>
-                <div className='flex opacity-80'><User className='mr-2'/>
+                <div className='flex opacity-80 md:text-lg'><GraduationCap className='mr-2'/> Student - UKEN Kraków | Informatyka</div>
+                <div className='flex opacity-80 md:text-lg'><MapPin className='mr-2'/><p>Brzesko | Kraków, Polska</p></div>
+                <div className='flex opacity-80 md:text-lg'><User className='mr-2'/>
                     <p>Dostępny 
                     <span className='inline-flex relative ml-2'>
-                        <span className='h-[8px] w-[8px] bg-green-400 rounded animate-pulse'></span>
+                        <span className='h-[8px] w-[8px] md:h-[10px] md:w-[10px] bg-green-400 rounded animate-pulse'></span>
                     </span>
                     </p>
                 </div>
             </div>
 
             <div className='flex w-full max-w-[1000px] overflow-hidden my-10 relative'>
-                <div className='flex w-full max-w-[1000px] my-10 *:w-[60px] *:mx-6 relative items-center *:absolute *:-right-[125px] *:animate-rightSlide *:lg:animate-rightSlideWithOpacity'>
+                <div className='flex w-full max-w-[1000px] my-10 *:w-[60px] *:md:w-[65px] *:mx-6 relative items-center *:absolute *:-right-[125px] *:animate-rightSlide *:lg:animate-rightSlideWithOpacity'>
                     <img src={React} alt="React logo"/>
                     <img src={TailwindCSS} alt="TailwindCSS logo" style={{animationDelay: '-2s'}}/>
                     <img src={Python} alt="Python logo" style={{animationDelay: '-4s'}}/>
