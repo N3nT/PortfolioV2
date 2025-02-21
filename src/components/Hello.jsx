@@ -1,3 +1,4 @@
+import { useInView } from "react-intersection-observer";
 import { MapPin, User, GraduationCap } from 'lucide-react';
 import face from '../assets/face.jpg';
 import cLanguage from '../assets/C.svg';
@@ -16,11 +17,17 @@ import linedIn from '../assets/linkedin-app-white-icon.svg';
 import github from '../assets/github-white-icon1.svg';
 import mail from '../assets/mail.svg';
 import discord from '../assets/discord.svg';
+import { useEffect } from "react";
 
-const Hello = () => {
+const Hello = ({setHomeActive}) => {
+    const { ref, inView } = useInView({threshold: [0.5]});
 
+    useEffect(() => {
+        setHomeActive(inView);
+    }, [inView]);
+   
     return(
-        <section className="text-white flex flex-col items-center overflow-hidden">
+        <section className="text-white flex flex-col items-center overflow-hidden" ref={ref}>
             <div className='w-[238px] h-[238px] overflow-hidden rounded-full bg-white border-5 border-green-400 animate-bounce mt-10 flex items-center justify-center'>
                 <div className='border-5 border-stone-700 rounded-full w-[230px] h-[230px] overflow-hidden'>
                     <img className='scale-80' src={face} alt="Zdjęcie mojej osoby" />

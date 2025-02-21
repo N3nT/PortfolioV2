@@ -2,24 +2,24 @@
     "projects":[
         {
             "name": "Portfolio",
-            "image": "./src/assets/portfolio.png",
+            "image": "./portfolio.png",
             "repoLink": "https://github.com/N3nT/PortfolioV2",
             "liveLink": null,
-            "techstack": ["./src/assets/react.svg", "./src/assets/vite.svg"]
+            "techstack": ["/react.svg", "/vite.svg"]
         },
         {
             "name": "museumShowcase",
-            "image": "./src/assets/museumShowcase.png",
+            "image": "./museumShowcase.png",
             "repoLink": "https://github.com/N3nT/museumShowcase",
             "liveLink": "https://museum-showcase-chi.vercel.app/",
-            "techstack": ["./src/assets/react.svg", "./src/assets/vite.svg"]
+            "techstack": ["./react.svg", "./vite.svg"]
         },
         {
             "name": "Contries",
-            "image": "./src/assets/countries.png",
+            "image": "./countries.png",
             "repoLink": "https://github.com/N3nT/Countries",
             "liveLink": "https://countries-beta-seven.vercel.app/",
-            "techstack": ["./src/assets/react.svg", "./src/assets/vite.svg", "./src/assets/Tailwind CSS.svg"]
+            "techstack": ["./react.svg", "./vite.svg", "./Tailwind CSS.svg"]
         }
     ]
 }

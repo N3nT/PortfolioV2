@@ -1,11 +1,21 @@
+import { useInView } from "react-intersection-observer";
+
 import WebProjectCard from './WebProjectCard'
 import OtherProjectCard from './OtherProjectCard';
 import webProjectsData from '../webProjects.json';
 import otherProjectsData from '../otherProjects.json';
+import { useEffect } from "react";
 
-const Projects = () => {
+const Projects = ({setProjectsActive}) => {
+    const isMobile = window.innerWidth < 768;
+    const { ref, inView } = useInView({threshold: isMobile ? [0.15] : [0.7]});
+    
+    useEffect(() => {
+        setProjectsActive(inView);
+    }, [inView]);
+    
     return(
-        <section className="flex flex-col items-center">
+        <section className="flex flex-col items-center" ref={ref}>
             <h2 className="text-white text-center text-3xl">Projekty</h2>
             <h3 className='text-white/70 text-xl mt-10'>WebDevelopment</h3>
             <div className='flex flex-col md:flex-row items-center *:md:mx-5 max-w-[1100px] flex-wrap justify-center'>
@@ -16,7 +26,6 @@ const Projects = () => {
             <h3 className='text-white/70 text-xl my-10'>Other</h3>
             <div className='flex flex-wrap justify-center items-center max-w-[1000px] animate-comeFromRight'>
                {otherProjectsData ? (otherProjectsData.projects.map((project, index) => {
-                    console.log(project);
                     return (<OtherProjectCard key={index} techStack={project.techstack} title={project.name} link={project.repoLink}/>)
                })) 
                : 

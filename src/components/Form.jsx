@@ -3,7 +3,7 @@ import emailjs from '@emailjs/browser';
 
 const Form = () => {
     const form = useRef();
-    const [successStatus, setSuccessStatus] = useState(true);
+    const [successStatus, setSuccessStatus] = useState(false);
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
@@ -37,16 +37,17 @@ const Form = () => {
         );
     };
     
-    setTimeout(() => {
-        setSuccessStatus(false);
-      }, 5000);
+    //testowanie
+    // setTimeout(() => {
+    //     setSuccessStatus(false);
+    //   }, 5000);
 
     return (
       <form ref={form} onSubmit={sendEmail} className='text-black flex flex-col w-3/4 mb-10 max-w-[600px]'>
-        <label className='text-white text-lg'>Imię:</label>
-        <input type="text" name="user_name" className='bg-white p-2' placeholder='Twoje imię' onChange={(e) => {handleInputsChange(setName, e)}} value={name}/>
+        <label className='text-white text-lg'>Imię</label>
+        <input type="text" name="user_name" className='bg-white p-2 mb-4' placeholder='Twoje imię' onChange={(e) => {handleInputsChange(setName, e)}} value={name}/>
         <label className='text-white text-lg'>Email</label>
-        <input type="email" name="user_email" className='bg-white p-2' placeholder='Twój email' onChange={(e) => {handleInputsChange(setEmail, e)}} value={email}/>
+        <input type="email" name="user_email" className='bg-white p-2 mb-4' placeholder='Twój email' onChange={(e) => {handleInputsChange(setEmail, e)}} value={email}/>
         <label className='text-white text-lg'>Wiadomość</label>
         <textarea name="message" className='bg-white p-2' placeholder='Treść wiadomości' rows={5} onChange={(e) => {handleInputsChange(setMessage, e)}} value={message}/>
         <input type="submit" value="Send" className='bg-green-400 hover:bg-green-700 text-white p-5'/>

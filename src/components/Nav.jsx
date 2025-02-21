@@ -6,9 +6,7 @@ const Underline = () => {
     )
 }
 
-const Nav = () => {
-    const [activeSection, setActiveSection] = useState(0);
-
+const Nav = ({homeActive, projectsActive, contactActive}) => {
     return(
         <nav className="backdrop-blur-xs sticky top-0 w-full flex justify-center border-b-[1px] border-stone-400 z-10">
             {/*border-stone-400*/}
@@ -16,15 +14,15 @@ const Nav = () => {
                 <ul className="text-white flex w-full h-[60px] shadow-2xl">
                     <li className="p-4 text-lg flex-col">
                         <p className='drop-shadow-[2px_2px_2px_rgba(0,0,0,1)]'>Home</p>
-                        {activeSection === 0 ? <Underline/> : null}
+                        {homeActive ? <Underline className='aniamte-underline'/> : null}
                     </li>
                     <li className="p-4 text-lg md:mx-5">
                         <p className='drop-shadow-[2px_2px_2px_rgba(0,0,0,1)]'>Projekty</p>
-                        {activeSection === 1 ? <Underline/> : null}
+                        {projectsActive ? <Underline/> : null}
                     </li>
                     <li className="p-4 text-lg">
                         <p className='drop-shadow-[2px_2px_2px_rgba(0,0,0,1)]'>Kontakt</p>
-                        {activeSection === 2 ? <Underline/> : null}
+                        {contactActive ? <Underline/> : null}
                     </li>
                 </ul>
             </div>
