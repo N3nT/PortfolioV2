@@ -11,7 +11,7 @@ import JS from '../assets/JavaScript.svg';
 import MySql from '../assets/MySQL.svg';
 import PHP from '../assets/PHP.svg';
 import Python from '../assets/Python.svg';
-import React from '../assets/React.svg';
+import React from '../assets/react.svg';
 import Sass from '../assets/Sass.svg';
 import TailwindCSS from '../assets/Tailwind CSS.svg';
 import Vite from '../assets/vite.svg';
