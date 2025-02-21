@@ -14,6 +14,7 @@ const Projects = ({setProjectsActive}) => {
         setProjectsActive(inView);
     }, [inView]);
     
+
     return(
         <section className="flex flex-col items-center" ref={ref}>
             <h2 className="text-white text-center text-3xl">Projekty</h2>
