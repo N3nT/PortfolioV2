@@ -14,14 +14,13 @@ const Projects = ({setProjectsActive}) => {
         setProjectsActive(inView);
     }, [inView]);
     
-
     return(
-        <section className="flex flex-col items-center mb-15" ref={ref}>
+        <section className="flex flex-col items-center mb-15 scroll-mt-[100px]" ref={ref} id='projects'>
             <h2 className="text-white text-center text-3xl sm:text-4xl">Projekty</h2>
             <h3 className='text-white/70 text-xl mt-10 sm:text-2xl'>WebDevelopment</h3>
             <div className='flex flex-col md:flex-row items-center *:md:mx-5 max-w-[1100px] flex-wrap justify-center'>
                 {webProjectsData ? webProjectsData.projects.map((project, index) => {
-                    return(<WebProjectCard key={index} projectImg={project.image} techStack={project.techstack} liveLink={project.liveLink} repoLink={project.repoLink} projectTitle={project.name}/>)
+                return(<WebProjectCard key={index} projectImg={project.image} techStack={project.techstack} liveLink={project.liveLink} repoLink={project.repoLink} projectTitle={project.name}/>)
                 }) : null}
             </div>
             <h3 className='text-white/70 text-xl my-10 sm:text-2xl'>Other</h3>

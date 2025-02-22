@@ -1,6 +1,5 @@
 import { motion } from 'motion/react';
 import { useInView } from "react-intersection-observer";
-
 const WebProjectCard = ({ projectImg, techStack, liveLink, repoLink, projectTitle }) => {
 	const { ref, inView } = useInView({triggerOnce: true, threshold: [1]});
 	return (

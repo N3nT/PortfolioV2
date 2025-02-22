@@ -10,15 +10,15 @@ const Nav = ({homeActive, projectsActive, contactActive}) => {
             <div className="max-w-[1000px]">
                 <ul className="text-white flex w-full h-[60px] md:h-[65px] shadow-2xl *:p-4 *:text-lg *:md:text-xl md:space-x-5 *:lg:text-2xl lg:space-x-10">
                     <li>
-                        <p className='drop-shadow-[2px_2px_2px_rgba(0,0,0,1)]'>Home</p>
+                        <a className='drop-shadow-[2px_2px_2px_rgba(0,0,0,1)]' href="#home">Home</a>
                         {homeActive ? <Underline/> : null}
                     </li>
                     <li>
-                        <p className='drop-shadow-[2px_2px_2px_rgba(0,0,0,1)]'>Projekty</p>
+                        <a className='drop-shadow-[2px_2px_2px_rgba(0,0,0,1)]' href="#projects">Projekty</a>
                         {projectsActive ? <Underline/> : null}
                     </li>
                     <li>
-                        <p className='drop-shadow-[2px_2px_2px_rgba(0,0,0,1)]'>Kontakt</p>
+                        <a className='drop-shadow-[2px_2px_2px_rgba(0,0,0,1)]' href='#contact'>Kontakt</a>
                         {contactActive ? <Underline/> : null}
                     </li>
                 </ul>
