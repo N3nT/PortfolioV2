@@ -2,23 +2,18 @@
     "projects":[
         {
             "name": "Contact Manager",
-            "repoLink": "https://github.com/N3nT/PortfolioV2",
-            "techstack": ["./src/assets/C.svg"]
+            "repoLink": "https://github.com/N3nT/contact_manager",
+            "techstack": ["./C.svg"]
         },
         {
             "name": "Piggybank",
-            "repoLink": "https://github.com/N3nT/PortfolioV2",
-            "techstack": ["./src/assets/Python.svg"]
+            "repoLink": "https://github.com/N3nT/piggybank",
+            "techstack": ["./Python.svg"]
         },
         {
-            "name": "Windows Widget",
-            "repoLink": "https://github.com/N3nT/PortfolioV2",
-            "techstack": ["./src/assets/C.svg"]
-        },
-        {
-            "name": "DiscordBot",
-            "repoLink": "https://github.com/N3nT/PortfolioV2",
-            "techstack": ["./src/assets/C.svg", "./src/assets/C.svg"]
+            "name": "Console Hangman",
+            "repoLink": "https://github.com/N3nT/hangman-C",
+            "techstack": ["./C.svg"]
         }
     ]
 }

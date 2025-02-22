@@ -9,7 +9,7 @@ const WebProjectCard = ({ projectImg, techStack, liveLink, repoLink, projectTitl
 			animate={inView ? {x: 0, opacity: 1} : {}}
 			transition={{duration: 0.8}}
 		>
-			<div className='w-[300px] h-[400px] border-2 border-stone-700 rounded-2xl overflow-hidden relative animate-comeFromLeft mt-10 cursor-default'>
+			<div className='w-[300px] h-[400px] border-2 border-green-400 rounded-2xl overflow-hidden relative animate-comeFromLeft mt-10 cursor-default'>
 				<img src={projectImg} alt=''/>
 				<div className='absolute top-0 w-full h-full bg-black opacity-0 hover:opacity-100 transition-all duration-300 flex flex-col items-center justify-center p-5'>
 					<p className='text-center text-white text-2xl md:text-3xl font-bold'>

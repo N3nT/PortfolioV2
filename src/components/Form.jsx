@@ -36,11 +36,6 @@ const Form = () => {
           },
         );
     };
-    
-    //testowanie
-    // setTimeout(() => {
-    //     setSuccessStatus(false);
-    //   }, 5000);
 
     return (
       <form ref={form} onSubmit={sendEmail} className='text-black flex flex-col w-3/4 mb-10 max-w-[600px] md:text-lg'>

@@ -18,10 +18,6 @@ function App() {
       <Hello setHomeActive={setHomeActive}/>
       <Projects setProjectsActive={setProjectsActive}/>
       <Contact setContactActive={setContactActive}/>
-      {/* <MyComponent/> */}
-      {/* <div className='h-[1000px]'>
-        <p className='text-white'>dupa</p>
-      </div> */}
       <Footer/>
     </div>
   )

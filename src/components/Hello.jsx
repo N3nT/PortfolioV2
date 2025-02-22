@@ -15,7 +15,7 @@ import Sass from '../assets/Sass.svg';
 import TailwindCSS from '../assets/Tailwind CSS.svg';
 import Vite from '../assets/vite.svg';
 import linedIn from '../assets/linkedin-app-white-icon.svg';
-import github from '../assets/github-white-icon1.svg';
+import github from '../assets/github-white-icon.svg';
 import mail from '../assets/mail.svg';
 import discord from '../assets/discord.svg';
 
@@ -53,7 +53,7 @@ const Hello = ({setHomeActive}) => {
                 <div className='flex opacity-80 mb-5 items-center *:p-2 *:hover:opacity-70 *:transition-opacity'>
                     <a href="https://www.linkedin.com/in/bartosz-widlak-06a316313/" target='_blank'><img src={linedIn} alt="linkedin link" className='w-[35px] h-[35px] md:w-[45px] md:h-[45px]'/></a>
                     <a href="https://github.com/N3nT" target='_blank'><img src={github} alt="github link" className='w-[40px] h-[40px] md:w-[50px] md:h-[50px]'/></a>
-                    <a href="https://github.com/N3nT" target='_blank'><img src={discord} alt="github link" className='md:w-[60px] md:h-[60px]'/></a>
+                    <a href="https://discord.com/users/419910814112153610" target='_blank'><img src={discord} alt="github link" className='md:w-[60px] md:h-[60px]'/></a>
                     <a href="mailto:bartosz.widlak@op.pl" target='_blank'><img src={mail} alt="mail link" className='w-[45px] h-[45px] md:w-[55px] md:h-[55px]'/></a>
                 </div>
                 <div className='flex opacity-80 md:text-lg'><GraduationCap className='mr-2'/> Student - UKEN Kraków | Informatyka</div>
