@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import Form from '../components/Form';
 
 const Contact = ({setContactActive}) => {
-    const { ref, inView } = useInView({threshold: [0.70]});
+    const { ref, inView } = useInView({threshold: [0.5]});
 
     useEffect(() => {
         setContactActive(inView);

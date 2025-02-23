@@ -8,7 +8,7 @@ import { useEffect } from "react";
 
 const Projects = ({setProjectsActive}) => {
     const isMobile = window.innerWidth < 768;
-    const { ref, inView } = useInView({threshold: isMobile ? [0.15] : [0.7]});
+    const { ref, inView } = useInView({threshold: [0.5], rootMargin: "0px 0px 20% 0px",});
     
     useEffect(() => {
         setProjectsActive(inView);
@@ -20,7 +20,7 @@ const Projects = ({setProjectsActive}) => {
             <h3 className='text-white/70 text-xl mt-10 sm:text-2xl'>WebDevelopment</h3>
             <div className='flex flex-col md:flex-row items-center *:md:mx-5 max-w-[1100px] flex-wrap justify-center'>
                 {webProjectsData ? webProjectsData.projects.map((project, index) => {
-                return(<WebProjectCard key={index} projectImg={project.image} techStack={project.techstack} liveLink={project.liveLink} repoLink={project.repoLink} projectTitle={project.name}/>)
+                return(<WebProjectCard key={index} projectImg={project.image} techStack={project.techstack} liveLink={project.liveLink} repoLink={project.repoLink} projectTitle={project.name} isMobile={isMobile}/>)
                 }) : null}
             </div>
             <h3 className='text-white/70 text-xl my-10 sm:text-2xl'>Other</h3>

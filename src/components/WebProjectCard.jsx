@@ -1,11 +1,11 @@
 import { motion } from 'motion/react';
 import { useInView } from "react-intersection-observer";
-const WebProjectCard = ({ projectImg, techStack, liveLink, repoLink, projectTitle }) => {
+const WebProjectCard = ({ projectImg, techStack, liveLink, repoLink, projectTitle, isMobile }) => {
 	const { ref, inView } = useInView({triggerOnce: true, threshold: [1]});
 	return (
 		<motion.div
 			ref={ref}
-			initial={{x: -50, opacity: 0}}
+			initial={isMobile ? {x: -50, opacity: 0} : {x: 0, opacity: 1}}
 			animate={inView ? {x: 0, opacity: 1} : {}}
 			transition={{duration: 0.8}}
 		>
