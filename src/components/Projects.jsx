@@ -7,7 +7,6 @@ import otherProjectsData from '../otherProjects.json';
 import { useEffect } from "react";
 
 const Projects = ({setProjectsActive}) => {
-    const isMobile = window.innerWidth < 768;
     const { ref, inView } = useInView({threshold: [0.5], rootMargin: "0px 0px 20% 0px",});
     
     useEffect(() => {
@@ -20,7 +19,7 @@ const Projects = ({setProjectsActive}) => {
             <h3 className='text-white/70 text-xl mt-10 sm:text-2xl'>WebDevelopment</h3>
             <div className='flex flex-col md:flex-row items-center *:md:mx-5 max-w-[1100px] flex-wrap justify-center'>
                 {webProjectsData ? webProjectsData.projects.map((project, index) => {
-                return(<WebProjectCard key={index} projectImg={project.image} techStack={project.techstack} liveLink={project.liveLink} repoLink={project.repoLink} projectTitle={project.name} isMobile={isMobile}/>)
+                return(<WebProjectCard key={index} projectImg={project.image} techStack={project.techstack} liveLink={project.liveLink} repoLink={project.repoLink} projectTitle={project.name}/>)
                 }) : null}
             </div>
             <h3 className='text-white/70 text-xl my-10 sm:text-2xl'>Other</h3>
@@ -31,7 +30,7 @@ const Projects = ({setProjectsActive}) => {
                : 
                (null)}
             </div>
-            <a href="https://github.com/N3nT?tab=repositories" className='bg-green-400 text-white p-5 text-lg rounded-lg mt-10 hover:bg-green-700 w-[200px] text-center transition-colors'>Check all projects</a>
+            <a href="https://github.com/N3nT?tab=repositories" className='bg-green-400 text-white p-5 text-lg rounded-lg mt-10 hover:bg-green-700 w-[200px] text-center transition-colors' aria-label="link do wszystkich repozytorium" target="_blank">Check all projects</a>
         </section>
     )
 }

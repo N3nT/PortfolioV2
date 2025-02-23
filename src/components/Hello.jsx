@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { motion } from "motion/react"
 
 import { MapPin, User, GraduationCap } from 'lucide-react';
-import face from '../assets/face.jpg';
+import face from '../assets/face.webp';
 import cLanguage from '../assets/C.svg';
 import Git from '../assets/Git.svg';
 import JS from '../assets/JavaScript.svg';
@@ -36,7 +36,7 @@ const Hello = ({setHomeActive}) => {
                 }}>
                 <div className='w-[238px] h-[238px] overflow-hidden rounded-full bg-white border-5 border-green-400 animate-bounce mt-15 flex items-center justify-center'>
                     <div className='border-5 border-stone-700 rounded-full w-[230px] h-[230px] overflow-hidden'>
-                        <img className='scale-80' src={face} alt="Zdjęcie mojej osoby" />
+                        <img className='scale-80' src={face} alt="Zdjecie mojej osoby" />
                     </div>
                 </div>
             </motion.div>
@@ -51,10 +51,10 @@ const Hello = ({setHomeActive}) => {
             
             <div className='mt-5 flex flex-col items-center'>
                 <div className='flex opacity-80 mb-5 items-center *:p-2 *:hover:opacity-70 *:transition-opacity'>
-                    <a href="https://www.linkedin.com/in/bartosz-widlak-06a316313/" target='_blank'><img src={linedIn} alt="linkedin link" className='w-[35px] h-[35px] md:w-[45px] md:h-[45px]'/></a>
-                    <a href="https://github.com/N3nT" target='_blank'><img src={github} alt="github link" className='w-[40px] h-[40px] md:w-[50px] md:h-[50px]'/></a>
-                    <a href="https://discord.com/users/419910814112153610" target='_blank'><img src={discord} alt="github link" className='md:w-[60px] md:h-[60px]'/></a>
-                    <a href="mailto:bartosz.widlak@op.pl" target='_blank'><img src={mail} alt="mail link" className='w-[45px] h-[45px] md:w-[55px] md:h-[55px]'/></a>
+                    <a href="https://www.linkedin.com/in/bartosz-widlak-06a316313/" target='_blank'><img src={linedIn} alt="linkedin link" className='w-[35px] h-[35px] md:w-[45px] md:h-[45px]' aria-label="link do linkedin"/></a>
+                    <a href="https://github.com/N3nT" target='_blank'><img src={github} alt="github link" className='w-[40px] h-[40px] md:w-[50px] md:h-[50px]' aria-label="link do githuba"/></a>
+                    <a href="https://discord.com/users/419910814112153610" target='_blank'><img src={discord} alt="discord link" className='md:w-[60px] md:h-[60px]' aria-label="link do profilu discord"/></a>
+                    <a href="mailto:bartosz.widlak@op.pl" target='_blank'><img src={mail} alt="mail link" className='w-[45px] h-[45px] md:w-[55px] md:h-[55px]' aria-label="link do maila"/></a>
                 </div>
                 <div className='flex opacity-80 md:text-lg'><GraduationCap className='mr-2'/> Student - UKEN Kraków | Informatyka</div>
                 <div className='flex opacity-80 md:text-lg'><MapPin className='mr-2'/><p>Brzesko | Kraków, Polska</p></div>

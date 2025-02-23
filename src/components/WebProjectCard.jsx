@@ -1,17 +1,22 @@
-import { motion } from 'motion/react';
-import { useInView } from "react-intersection-observer";
-const WebProjectCard = ({ projectImg, techStack, liveLink, repoLink, projectTitle, isMobile }) => {
-	const { ref, inView } = useInView({triggerOnce: true, threshold: [1]});
+import { useState } from 'react';
+import { motion, AnimatePresence } from 'motion/react';
+const WebProjectCard = ({ projectImg, techStack, liveLink, repoLink, projectTitle }) => {
+
+	const [imageClicked, setImageClicked] = useState(false);
+
 	return (
-		<motion.div
-			ref={ref}
-			initial={isMobile ? {x: -50, opacity: 0} : {x: 0, opacity: 1}}
-			animate={inView ? {x: 0, opacity: 1} : {}}
-			transition={{duration: 0.8}}
-		>
 			<div className='w-[300px] h-[400px] border-2 border-green-400 rounded-2xl overflow-hidden relative animate-comeFromLeft mt-10 cursor-default'>
-				<img src={projectImg} alt=''/>
-				<div className='absolute top-0 w-full h-full bg-black opacity-0 hover:opacity-100 transition-all duration-300 flex flex-col items-center justify-center p-5'>
+				<AnimatePresence>
+				{!imageClicked && <motion.img src={projectImg} 
+											alt={`${projectTitle} preview`} 
+											initial={{ y: '-100%' }} 
+											animate={{ y: 0 }} 
+											exit={{ y: '-100%' }} 
+											transition={{ duration: 0.5 }}
+											onClick={() => {setImageClicked(!imageClicked)}}
+											className='z-10 absolute top-0'/>}
+				</AnimatePresence>
+				<div className='absolute top-0 w-full h-full bg-stone-900 flex flex-col items-center justify-center p-5 cursor-pointer' onClick={() => {setImageClicked(!imageClicked)}}>
 					<p className='text-center text-white text-2xl md:text-3xl font-bold'>
 						{projectTitle}
 					</p>
@@ -21,18 +26,17 @@ const WebProjectCard = ({ projectImg, techStack, liveLink, repoLink, projectTitl
 					</div>
 					<div className="*:py-5 *:px-8 md:text-lg *:transition-all *:">
 						{liveLink ? 
-							(<a className='bg-green-400 text-white rounded-l-lg inline-flex hover:bg-green-700' href={liveLink} target="_blank">Live</a>) : 
+							(<a className='bg-green-400 text-white rounded-l-lg inline-flex hover:bg-green-700' href={liveLink} target="_blank" aria-label="link do wersji live projektu">Live</a>) : 
 							(<p className='bg-green-700 text-white rounded-l-lg cursor-not-allowed inline-block'>Live</p>)
 						}
 						
 						{repoLink ? 
-							(<a className='bg-white text-black rounded-r-lg inline-flex hover:bg-stone-700 hover:text-white' href={repoLink} target="_blank">GitHub</a>) : 
+							(<a className='bg-white text-black rounded-r-lg inline-flex hover:bg-stone-700 hover:text-white' href={repoLink} target="_blank" aria-label="link do repozytorium projektu">GitHub</a>) : 
 							(<p className='bg-white/70 text-black rounded-r-lg cursor-not-allowed inline-block'>GitHub</p>)
 						}
 					</div>
 				</div>
 			</div>
-		</motion.div>
 	)
 }
 
