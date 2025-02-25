@@ -1,0 +1,2 @@
+docker build -t nginx_text .
+docker run -p 2137:80 nginx_test
