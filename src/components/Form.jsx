@@ -62,7 +62,7 @@ const Form = () => {
         null}
         <div className="flex justify-center mt-5">
                 <input type="checkbox" className="mx-5 scale-150" required/> 
-                <p className="text-white">Wyrażam zgodę na przetwarzanie moich danych osobowych w celu kontaktu zwrotnego zgodnie z <Link to="/privacy" className="text-green-400">polityką prywatności</Link></p>
+                <p className="text-white">Wyrażam zgodę na przetwarzanie moich danych osobowych w celu kontaktu zwrotnego zgodnie z <Link to="/privacy" className="text-green-400">polityką prywatności</Link>.</p>
             </div>
       </form>
     );
