@@ -1,10 +1,10 @@
 import { useInView } from "react-intersection-observer";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+
 import Form from '../components/Form';
 
 const Contact = ({setContactActive}) => {
     const { ref, inView } = useInView({threshold: [0.5]});
-
     useEffect(() => {
         setContactActive(inView);
     }, [inView]);
