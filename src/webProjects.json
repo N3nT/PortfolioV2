@@ -1,11 +1,11 @@
 {
     "projects":[
         {
-            "name": "Portfolio",
-            "image": "./portfolio.webp",
-            "repoLink": "https://github.com/N3nT/PortfolioV2",
-            "liveLink": null,
-            "techstack": ["/react.svg", "/vite.svg", "./Tailwind CSS.svg"]
+            "name": "Sunside Agency",
+            "image": "./sunside.webp",
+            "repoLink": "https://github.com/N3nT/sunside",
+            "liveLink": "https://sunside-nine.vercel.app/",
+            "techstack": ["/Sass.svg", "/vite.svg"]
         },
         {
             "name": "museumShowcase",
