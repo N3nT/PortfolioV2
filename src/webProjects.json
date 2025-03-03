@@ -20,6 +20,13 @@
             "repoLink": "https://github.com/N3nT/Countries",
             "liveLink": "https://countries-beta-seven.vercel.app/",
             "techstack": ["./react.svg", "./vite.svg", "./Tailwind CSS.svg"]
+        },
+        {
+            "name": "NewsHomePage",
+            "image": "./homenewspage.webp",
+            "repoLink": "https://github.com/N3nT/newsWeb",
+            "liveLink": "https://news-web-six-khaki.vercel.app/",
+            "techstack": ["./vite.svg", "./css.svg", "./JavaScript.svg"]
         }
     ]
 }
