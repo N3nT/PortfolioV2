@@ -1,10 +1,10 @@
 import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
 
 import WebProjectCard from './WebProjectCard'
 import OtherProjectCard from './OtherProjectCard';
 import webProjectsData from '../webProjects.json';
 import otherProjectsData from '../otherProjects.json';
-import { useEffect } from "react";
 
 const Projects = ({setProjectsActive}) => {
     const { ref, inView } = useInView({threshold: [0.5], rootMargin: "0px 0px 20% 0px",});

@@ -14,7 +14,7 @@ const WebProjectCard = ({ projectImg, techStack, liveLink, repoLink, projectTitl
 											exit={{ y: '-100%' }} 
 											transition={{ duration: 0.5 }}
 											onClick={() => {setImageClicked(!imageClicked)}}
-											className='z-10 absolute top-0'/>}
+											className='z-10 absolute top-0 cursor-pointer'/>}
 				</AnimatePresence>
 				<div className='absolute top-0 w-full h-full bg-stone-900 flex flex-col items-center justify-center p-5 cursor-pointer' onClick={() => {setImageClicked(!imageClicked)}}>
 					<p className='text-center text-white text-2xl md:text-3xl font-bold'>
