@@ -18,6 +18,7 @@ import linedIn from '../assets/linkedin-app-white-icon.svg';
 import github from '../assets/github-white-icon.svg';
 import mail from '../assets/mail.svg';
 import discord from '../assets/discord.svg';
+import docker from '../assets/docker.svg';
 
 
 const Hello = ({setHomeActive}) => {
@@ -79,6 +80,7 @@ const Hello = ({setHomeActive}) => {
                     <img src={cLanguage} alt="C logo" style={{animationDelay: '-14s'}}/>
                     <img src={Git} alt="Git logo" style={{animationDelay: '-16s'}}/>
                     <img src={JS} alt="JS logo" style={{animationDelay: '-18s'}}/>
+                    <img src={docker} alt="Docker logo" style={{animationDelay: '-20s'}}/>
                 </div>
             </div>
         </section>

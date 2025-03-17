@@ -1,13 +1,6 @@
 {
     "projects":[
         {
-            "name": "Sunside Agency",
-            "image": "./sunside.webp",
-            "repoLink": "https://github.com/N3nT/sunside",
-            "liveLink": "https://sunside-nine.vercel.app/",
-            "techstack": ["/Sass.svg", "/vite.svg"]
-        },
-        {
             "name": "museumShowcase",
             "image": "./museumShowcase.webp",
             "repoLink": "https://github.com/N3nT/museumShowcase",
@@ -15,11 +8,25 @@
             "techstack": ["./react.svg", "./vite.svg", "./Tailwind CSS.svg"]
         },
         {
+            "name": "HebdaLinks",
+            "image": "./hebdaLinks.webp",
+            "repoLink": "",
+            "liveLink": "https://hebda.vercel.app/",
+            "techstack": ["./Sass.svg", "./JavaScript.svg"]
+        },
+        {
             "name": "Contries",
             "image": "./countries.webp",
             "repoLink": "https://github.com/N3nT/Countries",
             "liveLink": "https://countries-beta-seven.vercel.app/",
             "techstack": ["./react.svg", "./vite.svg", "./Tailwind CSS.svg"]
+        },
+        {
+            "name": "Sunside Agency",
+            "image": "./sunside.webp",
+            "repoLink": "https://github.com/N3nT/sunside",
+            "liveLink": "https://sunside-nine.vercel.app/",
+            "techstack": ["/Sass.svg", "/vite.svg"]
         },
         {
             "name": "NewsHomePage",

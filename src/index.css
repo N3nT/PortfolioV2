@@ -45,7 +45,7 @@
 		}
 	}
 
-	--animate-rightSlideWithOpacity: rightSlideWithOpacity 20s linear infinite;
+	--animate-rightSlideWithOpacity: rightSlideWithOpacity 22s linear infinite;
 	@keyframes rightSlideWithOpacity {
     from{
       opacity: 0;
@@ -68,7 +68,7 @@
 		}
 	}
 
-  --animate-rightSlide: rightSlide 20s linear infinite;
+  --animate-rightSlide: rightSlide 22s linear infinite;
 	@keyframes rightSlide {
 		to {
 			transform: translateX(-1100px);
