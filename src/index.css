@@ -45,7 +45,7 @@
 		}
 	}
 
-	--animate-rightSlideWithOpacity: rightSlideWithOpacity 22s linear infinite;
+	--animate-rightSlideWithOpacity: rightSlideWithOpacity 30s linear infinite;
 	@keyframes rightSlideWithOpacity {
     from{
       opacity: 0;
@@ -68,10 +68,10 @@
 		}
 	}
 
-  --animate-rightSlide: rightSlide 22s linear infinite;
+  --animate-rightSlide: rightSlide 30s linear infinite;
 	@keyframes rightSlide {
 		to {
-			transform: translateX(-1100px);
+			transform: translateX(-1200px);
 		}
 	}
 

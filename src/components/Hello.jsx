@@ -19,6 +19,11 @@ import github from '../assets/github-white-icon.svg';
 import mail from '../assets/mail.svg';
 import discord from '../assets/discord.svg';
 import docker from '../assets/docker.svg';
+import eslint from '../assets/ESLint.svg';
+import ts from '../assets/TypeScript.svg';
+import node from '../assets/Node.js.svg';
+import MongoDb from '../assets/MongoDb.svg';
+import Express from '../assets/Express.svg';
 
 
 const Hello = ({setHomeActive}) => {
@@ -69,7 +74,7 @@ const Hello = ({setHomeActive}) => {
             </div>
 
             <div className='flex w-full max-w-[1000px] overflow-hidden mt-10 relative'>
-                <div className='flex w-full max-w-[1000px] my-10 *:w-[60px] *:md:w-[65px] *:mx-6 relative items-center *:absolute *:-right-[125px] *:animate-rightSlide *:lg:animate-rightSlideWithOpacity'>
+                <div className='flex w-full max-w-[1000px] my-10 *:w-[60px] *:md:w-[65px] *:mx-8 relative items-center *:absolute *:-right-[125px] *:animate-rightSlide *:lg:animate-rightSlideWithOpacity'>
                     <img src={React} alt="React logo"/>
                     <img src={TailwindCSS} alt="TailwindCSS logo" style={{animationDelay: '-2s'}}/>
                     <img src={Python} alt="Python logo" style={{animationDelay: '-4s'}}/>
@@ -81,6 +86,10 @@ const Hello = ({setHomeActive}) => {
                     <img src={Git} alt="Git logo" style={{animationDelay: '-16s'}}/>
                     <img src={JS} alt="JS logo" style={{animationDelay: '-18s'}}/>
                     <img src={docker} alt="Docker logo" style={{animationDelay: '-20s'}}/>
+                    <img src={eslint} alt="Eslint logo" style={{animationDelay: '-22s'}}/>
+                    <img src={ts} alt="TypeScript logo" style={{animationDelay: '-24s'}}/>
+                    <img src={node} alt="Node logo" style={{animationDelay: '-26s'}}/>
+                    <img src={MongoDb} alt="MongoDB logo" style={{animationDelay: '-28s'}}/>
                 </div>
             </div>
         </section>
