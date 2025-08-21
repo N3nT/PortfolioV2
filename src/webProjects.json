@@ -29,11 +29,11 @@
             "techstack": ["./ESLint.svg", "./Sass.svg", "./TypeScript.svg"]
         },
         {
-            "name": "Sunside Agency",
-            "image": "./sunside.webp",
-            "repoLink": "https://github.com/N3nT/sunside",
-            "liveLink": "https://sunside-nine.vercel.app/",
-            "techstack": ["/Sass.svg", "/vite.svg"]
+            "name": "ModaStyl Shop (front + backend)",
+            "image": "./modaStyl.webp",
+            "repoLink": "",
+            "liveLink": "https://moda-styl.vercel.app/",
+            "techstack": ["./TypeScript.svg", "./react.svg", "./Tailwind CSS.svg", "MongoDB.svg", "Node.js.svg"]
         }
     ]
 }

@@ -14,6 +14,11 @@
             "name": "Console Hangman",
             "repoLink": "https://github.com/N3nT/hangman-C",
             "techstack": ["./C.svg"]
+        },
+        {
+            "name": "Data Structures & Algorithms",
+            "repoLink": "https://github.com/N3nT/C-DSA",
+            "techstack": ["./C.svg"]
         }
     ]
 }

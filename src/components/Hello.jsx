@@ -23,7 +23,6 @@ import eslint from '../assets/ESLint.svg';
 import ts from '../assets/TypeScript.svg';
 import node from '../assets/Node.js.svg';
 import MongoDb from '../assets/MongoDb.svg';
-import Express from '../assets/Express.svg';
 
 
 const Hello = ({setHomeActive}) => {
